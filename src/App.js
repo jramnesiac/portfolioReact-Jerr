@@ -6,6 +6,7 @@ import Header from "./components/header";
 import HomeSection from "./components/homeSection";
 import PortfolioSection from "./components/portfolioSection";
 import ServiceSection from "./components/serviceSection";
+import { Component } from "react";
 const router = createBrowserRouter ([
   {path : "about", components: <AboutSection/>},
   {path : "header", components: <Header/>},
@@ -17,13 +18,18 @@ const router = createBrowserRouter ([
 ])
 
 
-function App() {
-  return (
-    <div>
-        <RouterProvider router={router} />
-    </div>  
-  
-  );
+class App extends Component {
+  render() {
+    return (
+          <div>
+            <Header />
+            <HomeSection />
+            <AboutSection />
+            <ServiceSection />
+            <PortfolioSection />
+          </div>
+    );
+  }
 }
 
 export default App;
