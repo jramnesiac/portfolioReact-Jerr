@@ -1,5 +1,6 @@
 // import here
-
+import "../style/style.css"
+import React from 'react'
 
 
 // import here

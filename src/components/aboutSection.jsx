@@ -1,15 +1,15 @@
 // import here
-
-
-
+import "../style/style.css"
+import images1 from "../assets/j.jpg"
+import React from 'react'
 // import here
 
 function AboutSection() {
     return (
         <section className="about" id="about">
-        {/* <div className="about-img">
-            <img src="./images/j.jpg" alt="ini_foto_jer_tampan" class="jer"> 
-        </div>  */}
+        <div className="about-img">
+            <img src={images1} alt="ini_foto_jer_tampan" class="jer"/> 
+        </div> 
 
         <div className="about-text">
             <h2>About Me</h2>
